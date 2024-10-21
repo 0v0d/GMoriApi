@@ -1,0 +1,5 @@
+.env
+
+# プロジェクトの除外パス
+/backend/log/
+/backend/tmp/
