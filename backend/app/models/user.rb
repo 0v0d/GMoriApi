@@ -5,8 +5,8 @@ class User < ApplicationRecord
 
   def as_json(options = {})
     super(options).tap do |json|
-      if json['image'] && json['image']['url']
-        json['image']['url'] = image.url
+      if json["image"] && json["image"]["url"]
+        json["image"]["url"] = image.url
       end
     end
   end
